@@ -1,0 +1,61 @@
+#page-description {
+  min-height: 750px;
+}
+#page-description input {
+  max-width: 570px;
+}
+#page-description .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: justify-content;
+  align-items: center;
+  padding: 200px 0;
+}
+#page-description .content h1, #page-description .content h2 {
+  margin: 0;
+}
+#page-description .content p {
+  margin-top: 31px;
+  margin-bottom: 17px;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+#page-description .content form {
+  max-width: 570px;
+}
+#page-description .content form div {
+  padding-bottom: 1.5rem;
+  display: flex;
+  column-gap: 24px;
+}
+#page-description .content form div label {
+  border: solid 2px #cacaca;
+  border-radius: 3px;
+}
+#page-description .content form div input {
+  min-width: 270px;
+  min-height: 50px;
+  outline: none;
+  border: none;
+  padding-left: 22.24px;
+  padding-right: 0;
+  background: none;
+  color: white;
+}
+#page-description .content form div input::placeholder {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+#page-description .content form button {
+  width: 100%;
+  padding: 20px 30px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  background-color: #34C176;
+}

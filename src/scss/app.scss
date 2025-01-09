@@ -8,6 +8,74 @@
     align-items: $align-items;
 };
 
+@function get-url($name) {
+    @if $name == 'a-ha.png' { @return '../images/A-ha.png'; }
+    @if $name == 'brother.png' { @return '../images/Brother.png'; }
+    @if $name == 'chrisrea.png' { @return '../images/Chris Rea.png'; }
+    @if $name == 'duranduran.png' { @return '../images/Duran Duran.png'; }
+    @if $name == 'facebook.png' { @return '../images/Facebook.png'; }
+    @if $name == 'franksinatra.png' { @return '../images/Frank Sinatra.png'; }
+    @if $name == 'google+.png' { @return '../images/Google+.png'; }
+    @if $name == 'instagram.png' { @return '../images/Instagram.png'; }
+    @if $name == 'jacksavoretti.png' { @return '../images/Jack Savoretti.png'; }
+    @if $name == 'keane.png' { @return '../images/Keane.png'; }
+    @if $name == 'letterfromegypt.png' { @return '../images/Letter from Egypt.png'; }
+    @if $name == 'mortenharket.png' { @return '../images/Morten Harket.png'; }
+    @if $name == 'musictobemurderedby.png' { @return '../images/Music to Be Murdered By.png'; }
+    @if $name == 'ordinaryman.png' { @return '../images/Ordinary Man.png'; }
+    @if $name == 'outofmyhands.png' { @return '../images/Out of My Hands.png'; }
+    @if $name == 'paulyoung.png' { @return '../images/Paul Young.png'; }
+    @if $name == 'poetenesevangelium.png' { @return '../images/Poetenes Evangelium.png'; }
+    @if $name == 'tearsforfears.png' { @return '../images/Tears for Fears.png'; }
+    @if $name == 'twitter.png' { @return '../images/Twitter.png'; }
+    @if $name == 'vogtsvilla.png' { @return '../images/Vogts Villa.png'; }
+    @if $name == 'wildseed.png' { @return '../images/Wild Seed.png'; }
+    @if $name == 'avatar.png' { @return '../images/avatar.png'; }
+    @if $name == 'banner.png' { @return '../images/banner.png'; }
+    @if $name == 'iphone.png' { @return '../images/iphone.png'; }
+    @if $name == 'subscribe_1.png' { @return '../images/subscribe_1.png'; }
+    @if $name == 'subscribe_2.png' { @return '../images/subscribe_2.png'; }
+    @if $name == 'subscribe_3.png' { @return '../images/subscribe_3.png'; }
+    @else { @return ''; }
+};
+
+@mixin typographica($type) {
+    @if $type == 'mobile' {
+        h1 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 45px;
+        };
+
+        h2 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+        };
+
+        h3 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        };
+
+        h4 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+        };
+    };
+
+    // mobile head ok
+};
+
+@mixin bg($name) {
+    $url: get-url($name);
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+};
+
 #page-description {
     min-height: 750px;
 
@@ -88,6 +156,79 @@
 
 };
 
+#page-pricing {
+    @include d-flex(column, justify-content, center);
+    text-align: center;
+    padding-top: 100px;
+
+    h3 {
+        margin: 0;
+
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 57px;
+    };
+
+    .pricing {
+        @include d-flex(row, justify-content, center);
+        column-gap: 50px;
+        margin: 48px auto 40px auto;
+
+        h4 {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 24px 0 0 0;
+        };
+
+        .bg-card-subscribe1 {
+            @include bg("subscribe_1.png");
+        };
+
+        .bg-card-subscribe2 {
+            @include bg("subscribe_2.png");
+        };
+
+        .bg-card-subscribe3 {
+            @include bg("subscribe_3.png");
+        };
+
+        .pricing-item {
+            padding: 0 1.5rem;
+            border-radius: 1rem;
+
+            .pricing-value {
+                @include d-flex(row, center, center);
+                margin-top: 200px;
+                font-size: 64px;
+                line-height: 1em;
+                margin-bottom: 0;
+    
+                .pricing-rub {
+                    font-size: 32px;
+                    line-height: 48px;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                    margin-left: 16px;
+                };
+            };
+
+            .pricing-footer {
+                font-size: 12.8px;
+                line-height: 19.2px;
+
+                margin: 64px auto;
+            };
+        };
+        
+    };
+
+    p {
+        margin: 0 auto;
+    }
+}
+
 .bg-banner {
     display: block;
     background-image: url(../images/banner.png);
@@ -163,7 +304,6 @@ header {
 @media screen and (max-width: 414px) {
 
     body {
-        font-weight: bold;
         width: 414px;
     };
 
@@ -222,6 +362,32 @@ header {
                 text-align: start;
             };
         };
+    };
+
+    #page-pricing {
+        @include typographica("mobile");
+        h1, h2, h3, h4, h5 {
+            text-transform: uppercase;
+        };
+
+        .pricing {
+            @include d-flex(column, justify-content, center);
+            row-gap: 50px;
+            .pricing-item {
+                h4 {
+                    margin: 16px 0 0 0;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                };
+            };
+        };
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
     }
 };
 

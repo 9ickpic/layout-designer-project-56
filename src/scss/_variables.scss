@@ -17,7 +17,7 @@ $brown: #95390c;
 };
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans;
     line-height: 1.5;
     color: #fff;
     background-color: $black;
@@ -36,7 +36,27 @@ h1 {
 h2 {
     font-size: 38px;
     line-height: 57px;
-}
+};
+
+.btn {
+    margin-top: 40px;
+
+    border: solid 1px #fff;
+    border-radius: 5px;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    
+    padding: 20px 30px;
+    width: 100%;
+    min-height: 50px;
+    min-width: 270px;
+
+    display: block;
+};
 
 @media (max-width: 414px) {
     h1 {
