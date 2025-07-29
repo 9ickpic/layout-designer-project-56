@@ -1,4 +1,4 @@
-.backsize-two{
+.backsize-two {
   & h2 {
     text-align: left;
     margin-bottom: 48px;
@@ -9,9 +9,10 @@
 .tracks-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6,55px);
+  grid-template-rows: repeat(6, 55px);
   grid-row-gap: 25px;
 }
+
 .track-grid {
   display: grid;
   grid-template-areas: "pic txt time" "pic txt time";
@@ -20,11 +21,11 @@
   grid-column-gap: 15px;
 }
 
-
 .track-img {
   grid-area: pic;
 }
-.grid-p-txt{
+
+.grid-p-txt {
   display: flex;
   flex-direction: column;
   grid-area: txt;
@@ -49,8 +50,8 @@
   color: $text-grey;
   margin: 0;
   padding: 0;
-
 }
+
 .txt-track-time {
   grid-area: time;
   font-size: 12.8px;
@@ -58,21 +59,19 @@
   text-align: right;
 }
 
-.popular-track{
+.popular-track {
   & img {
-  width: 55px;
+    width: 55px;
   }
 }
 
-@media (min-width : 1240px) {
+@media (min-width: 1240px) {
   #page-popular-track {
-
     & .tracks-grid {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3,55px);
+      grid-template-rows: repeat(3, 55px);
       column-gap: 49px;
       padding-right: 49px;
-
     }
   }
 }

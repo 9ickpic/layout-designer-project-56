@@ -16,7 +16,6 @@
   }
 
   & .menu {
-
     & ul {
       margin: 17px 0;
       width: fit-content;
@@ -37,18 +36,19 @@
             color: $text-white;
           }
         }
-        & .firsta{
+
+        & .firsta {
           color: $text-white;
         }
       }
     }
   }
-  & .search-head {
 
+  & .search-head {
     & label {
       cursor: default;
 
-      & input{
+      & input {
         border: none;
         background-color: $back-grey;
         border-radius: 50px;
@@ -66,8 +66,7 @@
   }
 }
 
-
-@media (min-width : 1240px) {
+@media (min-width: 1240px) {
   .header {
     display: flex;
     width: 1200px;
@@ -82,10 +81,11 @@
 
     & .menu {
       display: inline-block;
+
       & ul {
         & li {
           display: inline-block;
-          margin: 0 24px 0 0 ;
+          margin: 0 24px 0 0;
         }
       }
     }
@@ -96,7 +96,6 @@
       width: 248px;
 
       & label {
-
         & input {
           width: 248px;
         }

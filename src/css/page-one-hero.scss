@@ -12,13 +12,11 @@
   & .button {
     padding-bottom: 1.5rem;
 
-
     & .btn {
       width: 200px;
       padding: 20px 30px;
       border-radius: 5px;
       border: none;
-
       font-size: 12.8px;
       color: $text-white;
       text-transform: uppercase;
@@ -26,17 +24,16 @@
     }
   }
 
-    & .btn-mix {
-      background: #5328A1;
-    }
+  & .btn-mix {
+    background: #5328a1;
+  }
 
-    & .btn-love {
-      background: #95390C;
-    }
-    }
+  & .btn-love {
+    background: #95390c;
+  }
+}
 
-
-@media (min-width : 1240px) {
+@media (min-width: 1240px) {
   .hero {
     & h1 {
       margin-bottom: 0;
@@ -55,11 +52,9 @@
     & .button {
       padding-right: 1.5rem;
 
-
       & .btm {
         display: block;
         width: 570px;
-
       }
     }
   }
