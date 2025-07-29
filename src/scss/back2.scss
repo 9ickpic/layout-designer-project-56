@@ -58,7 +58,7 @@
   margin: 0;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .fotfot {
     & ul {
       grid-template-columns: repeat(5, min-content);

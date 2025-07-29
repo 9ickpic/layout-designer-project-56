@@ -7,7 +7,7 @@
   background-size: cover;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .backsize-head {
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
   padding-right: 20px;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .back-margin {
     width: 1200px;
   }

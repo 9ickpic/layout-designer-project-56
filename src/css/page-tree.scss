@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .disco-grid {
     grid-template-columns: repeat(4, min-content);
   }

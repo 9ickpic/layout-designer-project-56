@@ -65,7 +65,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   #page-popular-track {
     & .tracks-grid {
       grid-template-columns: repeat(2, 1fr);

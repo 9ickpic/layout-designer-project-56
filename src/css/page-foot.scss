@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .back2 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, min-content);

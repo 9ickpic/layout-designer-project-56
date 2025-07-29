@@ -37,7 +37,7 @@ h2 {
   text-transform: uppercase;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   h1 {
     font-size: 60px;
     line-height: 90px;

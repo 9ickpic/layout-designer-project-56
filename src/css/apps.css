@@ -51,7 +51,7 @@ h2 {
   display: block;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   h1 {
     font-size: 60px;
     line-height: 90px;
@@ -76,7 +76,7 @@ h2 {
   background-size: cover;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .backsize-head {
     display: flex;
     justify-content: center;
@@ -90,7 +90,7 @@ h2 {
   margin: 0;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .back-margin {
     width: 1200px;
   }
@@ -101,7 +101,7 @@ h2 {
   padding-top: 100px;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .backsize-two {
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@ h2 {
   margin-bottom: 100px;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .backsize-four {
     display: flex;
     justify-content: center;
@@ -128,7 +128,7 @@ h2 {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .backsize-foot {
     display: flex;
     justify-content: center;
@@ -201,7 +201,7 @@ h2 {
   color: #757575;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .header {
     display: flex;
     width: 1200px;
@@ -268,7 +268,7 @@ h2 {
   background: #95390c;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .hero h1 {
     margin-bottom: 0;
   }
@@ -356,7 +356,7 @@ h2 {
   width: 55px;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   #page-popular-track .tracks-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 55px);
@@ -399,7 +399,7 @@ h2 {
   white-space: nowrap;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .disco-grid {
     grid-template-columns: repeat(4, min-content);
   }
@@ -473,7 +473,7 @@ h2 {
   margin: 0;
 }
 
-@media (min-width: 1240px) {
+@media (width >= 1240px) {
   .back2 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, min-content);
