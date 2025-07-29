@@ -1,0 +1,61 @@
+.store {
+  width: 100%;
+
+  & h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  & .flexconteiner {
+    & .picstore {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    & .storedescript {
+      color: $text-grey;
+      margin-bottom: 0;
+
+      & p {
+        font-size: 16px;
+        line-height: 23px;
+      }
+
+      & .button {
+        margin-top: 15px;
+        margin-right: auto;
+        padding: 17px 41px;
+        flex-shrink: 0;
+        border-radius: 32px;
+        font-size: 12.8px;
+        border: none;
+        background: #95390c;
+        color: $text-white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .store {
+    & .flexconteiner {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+
+      & .picstore {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+
+      & .storedescript {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-top: 16px;
+      }
+    }
+  }
+}

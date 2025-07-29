@@ -1,0 +1,70 @@
+.backsize-head {
+    display: block;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: url("../images/Morten Harket.png");
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width : 1240px) {
+    .backsize-head {
+        display: flex;
+        justify-content: center;
+        padding-top: 200px;
+    }
+}
+
+.back-margin {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+@media (min-width : 1240px) {
+    .back-margin {
+        width: 1200px;
+    }
+}
+
+.backsize-two {
+    background: $black-fon;
+    padding-top: 100px;
+}
+
+@media (min-width : 1240px){
+    .backsize-two {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.backsize-four {
+    background: $black-fon;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media (min-width : 1240px){
+    .backsize-four {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+}
+
+.backsize-foot {
+    display: block;
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+@media (min-width : 1240px){
+    .backsize-foot {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
